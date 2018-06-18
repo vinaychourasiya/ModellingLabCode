@@ -1,0 +1,5 @@
+reset;
+option solver gurobi;
+model lab02_ex3.mod;
+solve;
+display T1,T2,T3,T4,T5,T6,S11,S12,S21,S22,S31,S32,S41,S42,S51,S52,S61,S62,S71,S72,S81,S82;

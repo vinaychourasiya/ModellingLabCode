@@ -1,0 +1,36 @@
+set CANDS := 'KC' 'DH' 'HB' 'SC' 'KS' 'NK';
+
+set DAYS := 'MON' 'TUE' 'WED' 'THU' 'FRI';
+
+param AVAIL_HOURS:
+    MON TUE WED THU FRI =
+KC   6   0   6   0   6
+DH   0   6   0   6   0
+HB   4   8   4   0   4
+SC   5   5   5   0   5
+KS   3   0   3   8   0
+NK   0   0   0   6   2;
+
+param WAGES :=
+KC 150
+DH 152
+HB 148
+SC 146
+KS 166
+NK 176;
+
+param MIN_WORK :=
+KC 8 
+DH 8
+HB 8
+SC 8
+KS 7
+NK 7;
+
+param DAY_WORK :=
+MON 14
+TUE 14
+WED 14
+THU 14
+FRI 14;
+

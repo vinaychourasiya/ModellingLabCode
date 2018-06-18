@@ -1,0 +1,5 @@
+reset;
+option solver gurobi;
+model lab02_ex2.mod;
+solve;
+display kc1,kc3,kc5,hb1,hb2,hb3,hb5,sc1,sc2,sc3,sc5,ks1,ks3,ks4,dh2,dh4,nk4,nk5;

@@ -1,0 +1,6 @@
+reset;
+model lab12_ex1.mod;
+data  lab12_ex1.dat;
+option solver snopt;
+solve;
+display a,b,c;

@@ -1,0 +1,6 @@
+reset;
+model lab12ex3.mod;
+data lab12ex3b.dat;
+option solver gurobi;
+solve;
+display S, V;

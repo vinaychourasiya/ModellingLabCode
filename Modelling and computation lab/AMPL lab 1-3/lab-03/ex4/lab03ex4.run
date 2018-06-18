@@ -1,0 +1,8 @@
+reset;
+model lab03ex4.mod;
+data lab03ex4.dat;
+option solver gurobi;
+solve;
+display A;
+display IN_HOUSE_USED;
+display PERCHASE;

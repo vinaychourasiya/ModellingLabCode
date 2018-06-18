@@ -1,0 +1,7 @@
+reset;
+model lab12_ex2_b.mod;
+data lab12_ex2_b.dat;
+option solver gurobi;
+solve;
+display cost;
+display {c in f,d in l}x[c,d];

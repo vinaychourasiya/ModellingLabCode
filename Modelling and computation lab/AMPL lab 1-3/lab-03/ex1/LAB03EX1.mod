@@ -1,0 +1,11 @@
+param N;
+param b;
+set S := 1..N;
+param c{S};
+param lb{S};
+param ub{S};
+var x{S};
+minimize cost: sum{i in S}c[i]*x[i];
+s.t. con1: sum{i in S} x[i] <= b;
+s.t. ubcon{i in S}: x[i] <= ub[i];
+s.t. lbcon{i in S}: x[i] >= lb[i];

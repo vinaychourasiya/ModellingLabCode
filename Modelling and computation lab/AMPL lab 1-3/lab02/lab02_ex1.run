@@ -1,0 +1,5 @@
+reset;
+option solver gurobi;
+model lab02_ex1.mod;
+solve;
+display b0,b1,b2;

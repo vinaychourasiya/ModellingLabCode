@@ -1,0 +1,53 @@
+#suppose kci be the work done by kc on ith day where i=1 to 5 , 1= monday, 2= tuesday and so on..
+#similarly for dh,hb,sc,ks,nk; 
+
+var kc1;
+var kc3;
+var kc5;
+var hb1;
+var hb2;
+var hb3;
+var hb5;
+var sc1;
+var sc2;
+var sc3;
+var sc5;
+var ks1;
+var ks3;
+var ks4;
+var dh2;
+var dh4;
+var nk4;
+var nk5;
+
+minimize z: kc1*150+kc3*150+kc5*150+hb1*148+hb2*148+hb3*148+hb5*148+sc1*146+sc2*146+sc3*146+sc5*146+ks1*166+ks3*166+ks4*166+dh2*152+dh4*152+nk4*176+nk5*176;
+
+s.t. con1: kc1+hb1+sc1+ks1=14;
+s.t. con2: dh2+hb2+sc2=14;
+s.t. con3: kc3+hb3+sc3+ks3=14;
+s.t. con4: dh4+ks4+nk4=14;
+s.t. con5: kc5+hb5+sc5+nk5=14;
+s.t. con6: kc3<=6;
+s.t. con7: hb3<=4;
+s.t. con8: sc3<=5;
+s.t. con9: ks3<=3;
+s.t. con10:dh4<=6;
+s.t. con11:ks4<=8;
+s.t. con12:nk4<=6;
+s.t. con13:kc1<=6;
+s.t. con14:hb1<=4;
+s.t. con15:sc1<=5;
+s.t. con16:ks1<=3;
+s.t. con17:dh2<=6;
+s.t. con18: hb2<=8;
+s.t. con19:sc2<=5;
+s.t. con20:kc5<=6;
+s.t. con21:hb5<=4;
+s.t. con22:sc5<=5;
+s.t. con23:nk5<=2;
+s.t. con24:kc1+kc3+kc5>=8;
+s.t. con25:dh2+dh4>=8;
+s.t. con26:hb1+hb2+hb3+hb5>=8;
+s.t. con27:sc1+sc2+sc3+sc5>=8;
+s.t. con28:ks1+ks3+ks4>=7;
+s.t. con29:nk4+nk5>=7;
